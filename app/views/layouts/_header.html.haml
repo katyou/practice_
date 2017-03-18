@@ -1,0 +1,7 @@
+%header
+  %nav
+    -if user_signed_in?
+      %strong= link_to current_user.name, user_session_path
+      = link_to 'logout', destroy_user_session_path, method: :delete
+    -else
+      -# = link_to 'sign_up', new_user_registration_path
