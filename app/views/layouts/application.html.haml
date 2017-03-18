@@ -7,13 +7,5 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    %header
-      %nav
-        -if user_signed_in?
-          %strong la
-
-        -else
-          = link_to "サイン", new_user_session_path
-      %p.notice= notice
-      %p.alert= alert
-      = yield
+    =render partial: 'layouts/header'
+    = yield
