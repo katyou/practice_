@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'haml-rails'
 gem 'erb2haml'
-gem 'device'
+gem 'devise'
 
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-toggle-rails'
