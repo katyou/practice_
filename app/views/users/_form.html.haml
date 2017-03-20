@@ -11,7 +11,13 @@
     = f.label :name
     = f.text_field :name
   .field
-    = f.label :address
+    = f.label :email
     = f.text_field :email
+  .field
+    = f.label :password
+    = f.text_field :password
+  .field
+    = f.label :role
+    = f.select :role, [[:head_admin, 1], [:admin, 2], [:part_time_job, 3]]
   .actions
     = f.submit

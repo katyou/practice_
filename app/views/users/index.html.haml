@@ -5,19 +5,20 @@
   %table
     %thead
       %tr
-        %th Name
-        %th E-mail
-        %th{:colspan => "3"}
+        %th= t('user.name')
+        %th= t('user.email')
+        %th= t('user.role')
+        %th{:colspan => "4"}
     %tbody
       - @users.each do |user|
         %tr
           %td= user.name
           %td= user.email
+          %td= user.role_i18n
           %td= link_to 'Show', user
           %td= link_to 'Edit', edit_user_path(user)
 
 %br/
-= link_to 'New User', new_user_path
+= link_to 'new User', new_user_path
 
-.index_table_time
-  こんにちは
+= paginate @users

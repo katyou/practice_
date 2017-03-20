@@ -37,6 +37,13 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'devise'
+gem 'kaminari'
+
+# markdown text_box
+gem 'redcarpet', '~> 2.3.0'
+gem 'coderay'
+
+gem 'enum_help'
 
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-toggle-rails'
