@@ -5,9 +5,9 @@
   %table
     %thead
       %tr
-        %th Name
-        %th E-mail
-        %th Role
+        %th= t('user.name')
+        %th= t('user.email')
+        %th= t('user.role')
         %th{:colspan => "4"}
     %tbody
       - @users.each do |user|
@@ -19,4 +19,4 @@
           %td= link_to 'Edit', edit_user_path(user)
 
 %br/
-= link_to 'New User', new_user_path
+= link_to 'new User', new_user_path
