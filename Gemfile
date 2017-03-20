@@ -38,6 +38,8 @@ gem 'haml-rails'
 gem 'erb2haml'
 gem 'devise'
 
+gem 'enum_help'
+
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-toggle-rails'
 
